@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>文档标题</title>
+    <meta name="keywords" content="your keywords">
+    <meta name="description" content="your description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link type="text/css " rel="stylesheet " href="css/global.css " />
+    <link type="text/css " rel="stylesheet " href="css/global_v2.css " />
+    <link rel="stylesheet" type="text/css" href="css/jquery.idcode.css">
+    <link type="text/css " rel="stylesheet " href="css/login.css " />
+    <script src="js/lib/require.js" data-main="js/login"></script>
+</head>
+
+<body>
+    <form id="myform">
+        <div class="sl_sitenav ">
+            <div class="sl_sitenav_bd clearfix ">
+                <div class="loginReg " id="loginReg " style="display: ">
+                    <span class="login ">
+                您好，欢迎来到飞虎乐购！<a href="login.html " hidefocus="true ">安全登录</a></span> <span class="reg ">还没加入我们？<a href="register.html " hidefocus="true " ">免费注册</a></span>
+                </div>
+                <div class="loginReg" id="loginReg_logined" style="display: none">
+                    <span class="logined">亲爱的 <a id="loginReg_logined_name" href="/Pages/MemberCenter/user_home.aspx">
+                </a>
+                下午好！ <a href="#">[退出]</a></span>
+                </div>
+                <div class="quickmenu">
+                    <div class="myacount" id="Jmyacount">
+                        <div class="menu">
+                            <a href="#" class="menu_hd">
+                        我的账户<b></b><span></span></a>
+                            <ul class="menu_bd">
+                                <li><a href="#">账户首页</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                                <li><a href="#">我的订单</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="help" id="Jhelp">
+                        <div class="menu">
+                            <a href="#" class="menu_hd">网站导航<b></b><span></span></a>
+                            <ul class="menu_bd ">
+                                <li><a href="#">帮助中心</a></li>
+                                <li><a href="#">联系客服</a></li>
+                                <li><a href="#">常见问题</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collection">
+                        <a href="javascript:;" id="JaddFavorites">加入收藏</a><b></b></div>
+                    <div class="tel">
+                        400 883 6900<b></b></div>
+                </div>
+            </div>
+        </div>
+        <div class="sl_site_content">
+            <div class="login_wrap">
+                <div class="login_wrap_head">
+                    <h3>用户登录</h3>
+                </div>
+                <p>
+                    <label> 用户名: </label>
+                    <input name="uname">
+                </p>
+                <p>
+                    <label> 密码: </label>
+                    <input name="upwd" id="upwd" type="password">
+                </p>
+                <p><a href="#">忘记密码</a></p>
+                <table class="joint_login" style="width: 100%; line-height: 20px; padding-left: 0px">
+                    <tr>
+                        <td height="30" width="80px" align="right">
+                            联合登录：
+                        </td>
+                        <td>
+                            <span class="itaobao" style="cursor: pointer">
+                                <a target="_self" href="/UnionLogin/UnionLogin.aspx?LoginType=3"> </a>
+                                <span style="margin-left:20px;">支付宝快捷登录</span>
+                            </span>
+                            <span class="iqq">
+                                <a style="cursor: pointer" target="_self" href="/UnionLogin/UnionLogin.aspx?LoginType=1" class="qq">   
+                                </a>
+                                <span style="margin-left: 20px;">QQ</span>
+                            </span>
+                            <span style="cursor: pointer" class="isina">
+                                <a target="_self" href="/UnionLogin/UnionLogin.aspx?LoginType=2"></a>
+                                <span style="margin-left: 20px">新浪</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="joint_login">
+                        <td height="30" align="right">
+                            &nbsp;
+                        </td>
+                        <td>
+                            <span class="irenren" style="cursor: pointer">
+                                <a target="_self" href="/UnionLogin/UnionLogin.aspx?LoginType=7"></a>
+                                <span style="margin-left: 1px">人人网</span>
+                            </span>
+                            <span class="ikaixin" style="cursor: pointer; margin-left: -5px">
+                                <a target="_self" href="/UnionLogin/UnionLogin.aspx?LoginType=6"></a>
+                                <span style="margin-left: 1px">开心</span>
+                            </span>
+                            <span class="inetease" style="cursor: pointer; margin-left: -10px">
+                                <a target="_self" href="/UnionLogin/UnionLogin.aspx?LoginType=5"></a>
+                                <span style="margin-left: 20px">网易</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="joint_login">
+                        <td height="30" align="right">
+                            &nbsp;
+                        </td>
+                        <td>
+                            <span class="ithunder" style="cursor: pointer; margin-left: 0px">
+                                <a target="_self" href="/UnionLogin/UnionLogin.aspx?LoginType=4"></a>
+                                <span style="margin-left: 20px">迅雷</span>
+                            </span>
+                            <span class="ichinaMobile" style="cursor: pointer; margin-left: 0px">
+                                <a target="_self" href="/UnionLogin/UnionLogin.aspx?LoginType=8"></a>
+                                <span style="margin-left: 25px">139邮箱</span>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    <button>安全登录</button>
+                    <a href="register.html">免费注册</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="fh_footer">
+                <div class="copyright">
+                    <p>
+                        <a href="#">
+                            常见问题</a>|<a href="#" title="法律说明">法律说明</a>|<a href="#" title="联系我们">联系我们</a></p>
+                    <p id="icp_link">
+                        增值电信业务经营许可证：<a href=" #" target="_blank">粤B2-20130551</a> |食品流通许可证：SP4403112014007826
+                    </p>
+                    <p id="icp_link">
+                        食品流通许可证：SP1103021110002595
+                    </p>
+                    <p>
+                        Copyright © 2009-2017 深圳市理约云信息管理有限公司.All Rights Reserved &nbsp;<span id="ctl00_FH_Footer_Internet_V2_machinecode" style="color: #FFF">PASSPORT05</span></p>
+                </div>
+                <ul>
+                    <li>
+                        <script id="ebsgovicon" src="js/govicon.js" type="text/javascript" charset="utf-8"></script>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

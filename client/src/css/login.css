@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: url(../images/bgr.jpg) repeat-x
+}
+
+.sl_site_content {
+    width: 950px;
+    height: 465px;
+    margin: 0 auto;
+    background: url(../images/login_bg.jpg) no-repeat center bottom;
+    position: relative;
+}
+
+.login_wrap {
+    width: 350px;
+    height: 350px;
+    border: 2px solid #EEDFBB;
+    background: #fff;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    bottom: 64px;
+    font-size: 15px;
+    opacity: .8;
+}
+
+.login_wrap_head {
+    height: 20px;
+    width: 350px;
+    /*text-align: left;*/
+    color: #666
+}
+
+.login_wrap p:nth-child(4) {
+    margin-left: 81px;
+    font-size: 12px;
+}
+
+.login_wrap_head h3 {
+    background: #efefef;
+    height: 30px;
+    font-family: "微软雅黑";
+    line-height: 30px;
+    width: 350px;
+    border: 1px solid #eedfbb;
+}
+
+
+.login_wrap p {
+    margin-top: 25px;
+}
+
+.login_wrap p label {
+    display: inline-block;
+    text-align: right;
+    width: 80px;
+}
+
+.login_wrap p input {
+    width: 200px;
+    border: 1px solid #ccc
+}
+
+
+
+
+
+
+/*----------------table-------------*/
+
+table {
+    font-size: 14px;
+}
+
+.login_box .joint_login {
+    border-top: 1px dashed #ccc;
+    margin-top: 5px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 50px
+}
+
+.login_box .joint_login span {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.joint_login .iqq {
+    background: url(../images/joint.gif) no-repeat 2px;
+}
+
+.joint_login .isina {
+    background: url(../images/ico_sina.gif) no-repeat 2px;
+}
+
+.joint_login .itaobao {
+    background: url(../images/ico_alipay.gif) no-repeat 2px;
+}
+
+.joint_login .ithunder {
+    background: url(../images/ico_xunlei.gif) no-repeat 2px;
+}
+
+.joint_login .ichinaMobile {
+    background: url(../images/ico_chinamobile.jpg) no-repeat left 2px;
+}
+
+.joint_login .inetease {
+    background: url(../images/ico_163.gif) no-repeat 2px;
+}
+
+.joint_login .irenren {
+    background: url(../images/ico_renren.gif) no-repeat left 0;
+    padding-left: 26px
+}
+
+.joint_login .ikaixin {
+    background: url(../images/ico_kaixin.gif) no-repeat left -2px;
+    padding-left: 24px
+}
+
+.login_box .joint_login span a:hover {
+    color: #c7012c;
+    text-decoration: underline;
+}
+
+button {
+    margin-left: 90px;
+    width: 80px;
+    height: 40px;
+    color: #9D9292;
+    background-color: #e0f2fe;
+    border-radius: 10%;
+    font-family: "微软雅黑"
+}
+
+
+.login_wrap p label:nth-child(3).error {
+    margin-left: 10px;
+    color: #B5ADAE;
+    width: 180px;
+    text-align: left;
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    width: 950px;
+    margin: 0 auto;
+}
+
+.fh_footer {
+    margin: 0 auto;
+    padding: 6px 0;
+    overflow: hidden
+}
+
+.fh_footer div {
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+}
+
+.fh_footer .copyright {
+    float: left;
+}
+
+.fh_footer .copyright a {
+    color: #0066ff;
+    padding: 0 5px 0 3px
+}
+
+.fh_footer .copyright #icp_link a {
+    color: #999;
+}
+
+.fh_footer ul {
+    float: right;
+}
+
+.fh_footer ul li {
+    float: left;
+    padding-left: 8px;
+}

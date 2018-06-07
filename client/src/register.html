@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>文档标题</title>
+    <meta name="keywords" content="your keywords">
+    <meta name="description" content="your description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link type="text/css " rel="stylesheet " href="css/global.css " />
+    <link type="text/css " rel="stylesheet " href="css/global_v2.css " />
+    <link rel="stylesheet" type="text/css" href="css/jquery.idcode.css">
+    <link type="text/css " rel="stylesheet " href="css/register.css " />
+    <script src="js/lib/require.js" data-main="js/register"></script>
+</head>
+
+<body>
+    <form id="myform">
+        <div class="sl_sitenav ">
+            <div class="sl_sitenav_bd clearfix ">
+                <div class="loginReg " id="loginReg " style="display: ">
+                    <span class="login ">
+                您好，欢迎来到飞虎乐购！<a href="login.html " hidefocus="true ">安全登录</a></span> <span class="reg ">还没加入我们？<a href="register.html " hidefocus="true " ">免费注册</a></span>
+                </div>
+                <div class="loginReg" id="loginReg_logined" style="display: none">
+                    <span class="logined">亲爱的 <a id="loginReg_logined_name" href="/Pages/MemberCenter/user_home.aspx">
+                </a>
+                下午好！ <a href="#">[退出]</a></span>
+                </div>
+                <div class="quickmenu">
+                    <div class="myacount" id="Jmyacount">
+                        <div class="menu">
+                            <a href="#" class="menu_hd">
+                        我的账户<b></b><span></span></a>
+                            <ul class="menu_bd">
+                                <li><a href="#">账户首页</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                                <li><a href="#">我的订单</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="help" id="Jhelp">
+                        <div class="menu">
+                            <a href="#" class="menu_hd">网站导航<b></b><span></span></a>
+                            <ul class="menu_bd ">
+                                <li><a href="#">帮助中心</a></li>
+                                <li><a href="#">联系客服</a></li>
+                                <li><a href="#">常见问题</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collection">
+                        <a href="javascript:;" id="JaddFavorites">加入收藏</a><b></b></div>
+                    <div class="tel">
+                        400 883 6900<b></b></div>
+                </div>
+            </div>
+        </div>
+        <div class="sl_site_content">
+            <div class="login_wrap">
+                <div class="login_wrap_head">
+                    <h3>用户注册</h3>
+                </div>
+                <p>
+                    <label> 用户名: </label>
+                    <input name="uname">
+                </p>
+                <p>
+                    <label> 密码: </label>
+                    <input name="upwd" id="upwd" type="password">
+                </p>
+                <p>
+                    <label> 确认密码: </label>
+                    <input name="upwd1" type="password">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
+                </p>
+                <p>
+                    <label>验证码:</label>
+                    <input type="text" id="Txtidcode" class="txtVerification" style="width: 100px"><span id="idcode"></span>
+                </p>
+                <p style="width: 200px;">
+                    <label for="agree" style="float: right;width: 120px;">我已阅读并且同意</label>
+                    <input type="checkbox" class="checkbox" id="agree" name="agree" style="width: 12px;
+    margin-left: 63px">
+                </p>
+                <p>
+                    <button>注册</button>
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="fh_footer">
+                <div class="copyright">
+                    <p>
+                        <a href="#">
+                            常见问题</a>|<a href="#" title="法律说明">法律说明</a>|<a href="#" title="联系我们">联系我们</a></p>
+                    <p id="icp_link">
+                        增值电信业务经营许可证：<a href=" #" target="_blank">粤B2-20130551</a> |食品流通许可证：SP4403112014007826
+                    </p>
+                    <p id="icp_link">
+                        食品流通许可证：SP1103021110002595
+                    </p>
+                    <p>
+                        Copyright © 2009-2017 深圳市理约云信息管理有限公司.All Rights Reserved &nbsp;<span id="ctl00_FH_Footer_Internet_V2_machinecode" style="color: #FFF">PASSPORT05</span></p>
+                </div>
+                <ul>
+                    <li>
+                        <script id="ebsgovicon" src="js/govicon.js" type="text/javascript" charset="utf-8"></script>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

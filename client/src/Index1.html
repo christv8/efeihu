@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv=" X-UA-Compatible " content="IE=Edge,chrome=1 ">
+    <title>飞虎乐购---富士康人的网购平台！</title>
+    <meta name="keywords " content="富士康、生活电器、服装鞋帽、家用家居、母婴玩具、运动户外、个护美妆、 网购 满立减 免单 " />
+    <meta name="description " content="富士康 电商平台、网购 满立减 免单 " />
+    <link type="text/css " rel="stylesheet " href="css/global_v2.css " />
+    <link type="text/css " rel="stylesheet " href="css/global.css " />
+    <link type="text/css " rel="stylesheet " href="css/index.css " />
+    <link type="text/css " rel="stylesheet " href="css/datouwang.css " />
+    <link type="text/css " href="css/style.css " rel="stylesheet " />
+</head>
+
+<body class="V980 ">
+    <div class="sl_sitenav ">
+        <div class="sl_sitenav_bd clearfix ">
+            <div class="loginReg " id="loginReg " style="display: ">
+                <span class="login ">
+                您好，欢迎来到飞虎乐购！<a href="login.html " >安全登录</a></span> <span class="reg ">还没加入我们？<a
+                        href="register.html "  ">免费注册</a>
+    </span>
+            </div>
+            <div class="loginReg" id="loginReg_logined" style="display: none">
+                <span class="logined">亲爱的 <a id="loginReg_logined_name" href="/Pages/MemberCenter/user_home.aspx">
+                </a>
+                下午好！ <a href="#">[退出]</a></span>
+            </div>
+            <div class="quickmenu">
+                <div class="myacount" id="Jmyacount">
+                    <div class="menu">
+                        <a href="#" class="menu_hd">
+                        我的账户<b></b><span></span></a>
+                        <ul class="menu_bd">
+                            <li><a href="#">账户首页</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="help" id="Jhelp">
+                    <div class="menu">
+                        <a href="#" class="menu_hd">网站导航<b></b><span></span></a>
+                        <ul class="menu_bd ">
+                            <li><a href="#">帮助中心</a></li>
+                            <li><a href="#">联系客服</a></li>
+                            <li><a href="#">常见问题</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collection">
+                    <a href="javascript:;" id="JaddFavorites">加入收藏</a><b></b></div>
+                <div class="tel">
+                    400 883 6900<b></b></div>
+            </div>
+        </div>
+    </div>
+    <!-- sl_sitenav end -->
+    <div class="sl_header " id="Jheader ">
+        <h1 class="logo ">
+        <a href="# " target="_self " title="飞虎乐购 " >
+            飞虎乐购</a></h1>
+        <div class="tsearch clearfix ">
+            <div class="tsearch_con ">
+                <input type="text " class="tsearch_txt JtxtFB " id="Jsearch " value=" " />
+            </div>
+            <div class="tsearch_btncon ">
+                <a href="javascript:void(0); " id="Jsearch_submit " class="tsearch_btn ">搜 索</a>
+            </div>
+        </div>
+        <!-- sl_headerbar start -->
+        <div class="sl_headerbar clearfix ">
+            <div class="category " id="Jcategory ">
+                <div class="category_hd ">
+                    <a href="# "><em>全部商品分类</em><b></b></a>
+                </div>
+            </div>
+            <!-- category end -->
+            <div class="mainnav ">
+                <a href="# " class="home curr " title="首页 " tag="Homepage|nav_频道|首页 ">首页</a>
+                <a href="#">奶粉专区</a>
+                <a href="#">夏普专区<span class="icon_new "></span></a>
+                <a href="#">
+                飞虎团购</a>
+                <a>飞虎严选<span class="icon_hot "></span></a>
+            </div>
+            <ul class="tcart " id="Jcart ">
+                <li class="tcart_pro "><a href="# " class="tcart_pro_hd ">购物车(<em id="Cart_num ">0</em>)<b></b></a>
+                    <div class="tcart_drop ">
+                        <ul class="mycartList " id="JcartList ">
+                        </ul>
+                        <div id="Jcart_haveItem ">
+                            <div class="mycart_total ">
+                                <span>共<em id="Jcart_nums ">0</em>件</span> <span>金额总计：<em class="ui_price "><b>&yen;</b><span
+                                id="Jcart_amount ">0.00</span></em>
+                                </span>
+                            </div>
+                            <div class="mycart_pay ">
+                                <a href="# ">
+                                <span>去购物车并结算</span></a></div>
+                        </div>
+                        <div id="Jcart_noItem " style="display: none " class="mycart_nopro ">
+                            您还未将任何商品加入购物车哦</div>
+                    </div>
+                </li>
+                <li class="tcart_check "><a href=" " title="去结算 ">去结算</a> </li>
+            </ul>
+        </div>
+    </div>
+    <!-- sl_header end -->
+    <!-- 静态广告内容开始 -->
+    <div class="sl_header1 ">
+        <!-- sl_headerbar start -->
+        <div class="sl_headerbar1 clearfix ">
+            <div class="category1 ">
+                <div class="category_bd ">
+                    <div class="category_item ">
+                        <div class="category_item_title bt15 ">
+                            <a href="# target=" _blank ">手机数码</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt1 "><a href="# " target="_blank ">生活电器</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt2 "><a href="# " target="_blank ">厨房电器</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt3 "><a href="# " target="_blank ">健康电器</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt4 "><a href="# " target="_blank ">个人护理</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt5 "><a href="# " target="_blank ">厨房用具</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt6 "><a href="# " target="_blank ">家居家纺</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt7 "><a href="# " target="_blank ">服装鞋帽</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt8 "><a href="# " target="_blank ">钟表首饰</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt9 "><a href="# " target="_blank ">洗护美妆</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt10 "><a href="# " target="_blank ">礼品箱包</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt11 "><a href="# " target="_blank ">运动健康</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt12 "><a href="# " target="_blank ">母婴玩具</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt13 "><a href="# " target="_blank ">汽车用品</a>
+                        </div>
+                    </div>
+                    <div class="category_item ">
+                        <div class="category_item_title bt14 "><a href="# " target="_blank ">食品/健康</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- category end -->
+        </div>
+        <!-- sl_headerbar end -->
+    </div>
+    <!-- sl_header end -->
+    <div class="vhd_container ">
+        <div class="fullSlide ">
+            <div class="bd ">
+                <ul class="slides ">
+                    <li style="background:url(images/banner_0501.jpg) 50% 0 no-repeat; "></li>
+                    <li style="background:url(images/banner_0628.jpg) 50% 0 no-repeat; "></li>
+                    <li style="background:url(images/banner_0530.jpg) 50% 0 no-repeat; "></li>
+                    <li style="background:url(images/banner_0604.jpg) 50% 0 no-repeat; "></li>
+                    <li style="background:url(images/banner_0531.jpg) 50% 0 no-repeat; "></li>
+                </ul>
+            </div>
+            <div class="hd ">
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <div class="W1200 miaos clearfix ">
+            <div id="tabbox " class="stripes titles_1 ">
+                <ul class="tabs " id="tabs ">
+                </ul>
+                <ul class="tab_conbox " id="tab_conbox ">
+                    <li class="tab_con ">
+                        <div class="ui_pro miaoshas "> <span id="time " style="font-size: 22px; position: absolute;left: 26px;top: 172px "></span> </div>
+                        <div class="pro_item clearfix ">
+                            <div class="ui_pro ">
+                                <div class="ui_pimg ">
+                                    <a href="# " class="img "><img  src="picture/d58f70ce-c719-422e-8d6f-8bc27699915b.jpg " width="150 " height="150 "></a>
+                                </div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# " target="_blank ">CHSEIKO 精工 不锈钢二件套 油瓶 JG-W0802</a></p>
+                                    <p class="ui_promtn ">
+                                        <a href="# "> </a>
+                                    </p>
+                                    <a href="# " target="_blank ">
+                                        <div class="old_pprice ">
+                                            <div class="ui_pprice " href="# "><span class="ui_pprice_e ">&yen;69</span><span class="yuanjia ">&yen;99</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ui_pro ">
+                                <div class="ui_pimg ">
+                                    <a href="goodlist.html " class="img "><img  src="picture/793f273b-ccad-43c1-8100-70d3c876fa66.jpg " width="150 " height="150 "></a>
+                                </div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# " target="_blank ">比得兔多功能削皮器套装PR-2496</a></p>
+                                    <p class="ui_promtn ">
+                                        <a href="# "> 5秒快速削皮   迷你型削水果机 </a>
+                                    </p>
+                                    <a href="# " target="_blank ">
+                                        <div class="old_pprice ">
+                                            <div class="ui_pprice " href="# "><span class="ui_pprice_e ">&yen;28</span><span class="yuanjia ">&yen;90</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ui_pro ">
+                                <div class="ui_pimg ">
+                                    <a target="_blank " href="# " class="img "><img  src="picture/daa55e7e-1a9f-4e2f-b39a-8e46ddd35027.jpg " width="150 " height="150 "></a>
+                                </div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# " target="_blank ">卡索娜干白葡萄酒750ml</a></p>
+                                    <p class="ui_promtn ">
+                                        <a href="# "> 果香浓郁、酒体柔顺，口感丰富！ </a>
+                                    </p>
+                                    <a href="# " target="_blank ">
+                                        <div class="old_pprice ">
+                                            <div class="ui_pprice " href="# "><span class="ui_pprice_e ">&yen;68</span><span class="yuanjia ">&yen;99</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ui_pro ">
+                                <div class="ui_pimg ">
+                                    <a href="# " class="img "><img  src="picture/c3006a5a-d361-422f-8be1-c41817eb9c89.jpg " width="150 " height="150 "></a>
+                                </div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# " target="_blank ">玛丽黛佳 肌底亮颜精华露 151g</a></p>
+                                    <p class="ui_promtn ">
+                                        <a href="/Product/2060115006494.html?actionid=1604524 "> 双"11 "聚惠！零点开抢！只需175！ </a>
+                                    </p>
+                                    <a href="# " target="_blank ">
+                                        <div class="old_pprice ">
+                                            <div class="ui_pprice " href="# "><span class="ui_pprice_e ">&yen;175</span><span class="yuanjia ">&yen;199</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="W1200 ">
+                    <div class="title_08 miaodian titles_2 "><a name="d1 "></a>
+                        <div class="tags ">
+                            <a class="tags_item " target="_blank " href="# ">手机</a>
+                            <a class="tags_item " target="_blank " href="# ">手机配件</a>
+                            <a class="tags_item " target="_blank " href="# ">摄影摄像</a>
+                            <a class="tags_item " target="_blank " href="# ">移动电源</a>
+                            <a class="tags_item " target="_blank " href="# ">智能设备</a>
+                            <a class="tags_item " target="_blank " href="# ">更多商品〉</a>
+                        </div>
+                    </div>
+                    <div class="pro_item pro_item_01 clearfix ">
+                        <div class="pro_01 ">
+                            <div class="oment_cover "><a class="oment_cover_logo " href="# " target="_blank "><img src="picture/8f_m200_cover.jpg " border="0 " /></a></div>
+                            <div class="oment_cover-bi2 "><a class="oment_cover_logo1 " href="# " target="_blank "><img src="picture/8f_m400-cover-1.jpg " border="0 " /></a>
+                                <a class="oment_cover_logo1 " href="# "><img src="picture/8f_m400-cover-2.jpg " border="0 " /></a></div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# " target="_blank "><img  src="picture/e873de9b-1767-4c8f-9bda-b80449e28f56.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 佳能（Canon）IXUS 285 HS 银色 数码相机 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;1199</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# "><img  src="picture/94e55843-daf7-4763-a84a-c8de25e22c0e.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 华为（Huawei）畅享7 Plus 64GB 移动联通电信4G手机 全网通 双卡双待（流光金） </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;1699</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# "><img  src="picture/58856014-85a8-49d4-8b68-48c618c7d3b5.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 华为 HUAWEI P10 全网通手机 4GB+64GB </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;3488</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# " target="_blank "><img  src="picture/fa59ec45-3a0b-4bf6-a6e9-c0062a9f2854.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> BIRD/波导 A510 移动联通2G 直板老人手机 咖啡色 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;99</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# " target="_blank "><img  src="picture/c0b871ba-1d8f-4747-89d3-ffc9a6694c5e.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 善领 MiFi  4G随身便携移动WIFI </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;399</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# " target="_blank "><img  src="picture/4a8b0526-9207-4c36-be1d-417b11557858.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> Viken   维肯  三合一快充数据线   狗年限量版  金色 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;39</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot_logo foot_logo1 ">
+                        <ul>
+                            <li><a href="# "><img src="picture/8f_logos_01.jpg " border="0 " /></a></li>
+                            <li><a href="# "><img src="picture/8f_logos_02.jpg " border="0 " /></a></li>
+                            <li><a href="# "><img src="picture/8f_logos_03.jpg " border="0 " /></a></li>
+                            <li><a href="# "><img src="picture/8f_logos_04.jpg " border="0 " /></a></li>
+                            <li><a href="# "><img src="picture/8f_logos_05.jpg " border="0 " /></a></li>
+                            <li><a href="# "><img src="picture/8f_logos_06.jpg " border="0 " /></a></li>
+                            <li><a href="# "><img src="picture/8f_logos_07.jpg " border="0 " /></a></li>
+                            <li><a href="# "><img src="picture/8f_logos_08.jpg " border="0 " /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="W1200 ">
+                    <div class="title_01 miaodian "><a name="d2 "></a>
+                        <div class="tags ">
+                            <a class="tags_item ">钟表首饰</a>
+                            <a class="tags_item ">内衣内裤</a>
+                            <a class="tags_item ">男装</a>
+                            <a class="tags_item ">女装</a>
+                            <a class="tags_item ">运动鞋</a>
+                            <a class="tags_item ">更多商品〉</a>
+                        </div>
+                    </div>
+                    <div class="pro_item pro_item_01 clearfix ">
+                        <div class="pro_01 ">
+                            <div class="oment_cover ">
+                                <a class="oment_cover_logo " href="# " target="_blank ">
+                                    <img src="picture/1f_m200_cover.jpg " border="0 " />
+                                </a>
+                            </div>
+                            <div class="oment_cover-bi2 ">
+                                <a class="oment_cover_logo1 " href="# " target="_blank ">
+                                    <img src="picture/1f_m400-cover-1.jpg " border="0 " />
+                                </a>
+                                <a class="oment_cover_logo1 " href="# " target="_blank ">
+                                    <img src="picture/1f_m400-cover-2.jpg " border="0 " />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg ">
+                                    <a href="# " target="_blank ">
+                                    <img  src="picture/321b692d-4d63-4224-a27e-be279598c264.jpg " width="150 " height="150 ">
+                                    </a>
+                                </div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname ">
+                                        <a href="# "> 百依恋歌 中长款高腰百褶裙 ZC1702 </a>
+                                    </p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;78</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg ">
+                                    <a href="# ">
+                                        <img  src="picture/14aef0f0-b640-409e-a686-92e1ebbddf93.jpg " width="150 " height="150 ">
+                                    </a>
+                                </div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname ">
+                                        <a href="# "> Belle百丽 春季新品乐福鞋流苏牛皮女单鞋 18083AM8 黑色 38码 </a>
+                                    </p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;998</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg ">
+                                    <a href="# " target="_blank ">
+                                        <img  src="picture/b6a5fa86-65e6-4af8-bf74-bd0e20a27364.jpg " width="150 " height="150 ">
+                                    </a>
+                                </div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname ">
+                                        <a href="# "> Daphne达芙妮 羊皮蝴蝶结粗跟女鞋 （灰）35码 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;249</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# "><img  src="picture/e8212466-7c3c-4440-85f3-80eeea20d5eb.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> George klein 时尚休闲DIY 1&9 防水石英手表 银壳银面银带 GK20840 SSS </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;1099</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# "><img  src="picture/a113eb32-220c-4470-a2c6-f344f6ede993.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> Natural Park 简约休闲日历星期防水尼龙表带中性手表 NP1304 SWI </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;588</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# " target="_blank "><img  src="picture/a1fdac26-50a7-4e2b-9d2a-f4a0a9d4b9c1.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 雅蕾丝秀 宫廷拉丝女士无痕调整型内衣套装 NY55 酒红色 70A </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;129</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot_logo foot_logo1 ">
+                        <ul>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/1f_logos_01.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/1f_logos_02.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/1f_logos_03.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/1f_logos_04.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/1f_logos_05.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/1f_logos_06.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/1f_logos_07.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/1f_logos_08.jpg " border="0 " /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="W1200 ">
+                    <div class="title_03 miaodian "><a name="d4 "></a>
+                        <div class="tags ">
+                            <a class="tags_item ">床品套件</a>
+                            <a class="tags_item ">毛毯</a>
+                            <a class="tags_item ">四季被</a>
+                            <a class="tags_item ">雨具雨伞</a>
+                            <a class="tags_item ">毛巾浴巾</a>
+                            <a class="tags_item ">更多商品〉</a>
+                        </div>
+                    </div>
+                    <div class="pro_item pro_item_01 clearfix ">
+                        <div class="pro_01 ">
+                            <div class="oment_cover ">
+                                <a class="oment_cover_logo " href="# " target="_blank ">
+                                    <img src="picture/3f_m200_cover.jpg " border="0 " />
+                                </a>
+                            </div>
+                            <div class="oment_cover-bi2 ">
+                                <a class="oment_cover_logo1 " href="# " target="_blank ">
+                                    <img src="picture/3f_m400-cover-1.jpg " border="0 " />
+                                </a>
+                                <a class="oment_cover_logo1 " href="# " target="_blank ">
+                                    <img src="picture/3f_m400-cover-2.jpg " border="0 " />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg ">
+                                    <a href="# " target="_blank "><img  src="picture/0ba5f8ee-8db6-4594-8a14-e97302f12be7.jpg " width="150 " height="150 ">
+                                    </a>
+                                </div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname ">
+                                        <a href="# "> 【浪莎家纺】里外全棉可机洗棉花夏被 新疆长绒棉空调被 温婉花语 200*230cm </a>
+                                    </p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;188</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg ">
+                                    <a href="# " target="_blank ">
+                                        <img  src="picture/e54a2a3a-058e-4970-8e43-82d9b76e84c3.jpg " width="150 " height="150 ">
+                                    </a>
+                                </div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname ">
+                                        <a href="# "> 摩亚 U型伸缩 加柔加密 防蚊装饰合二为一蚊帐  1.5*2.0M 紫色 </a>
+                                    </p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;189</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# " target="_blank "><img  src="picture/bea36fbd-3605-4fd6-b555-8267bfd6849e.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 飞虎严选 洁丽雅长绒棉纯棉毛巾 两条装 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;19.90</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# " target="_blank "><img  src="picture/957ee6b6-f19c-4dca-aeb8-6b0ddcbe66a0.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 理文亨奇 璞竹 原浆纸不漂白卫生纸婴儿抽纸专用宝宝3层/抽 136抽12包  BR3136S12 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;51.90</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# " target="_blank "><img  src="picture/bea36fbd-3605-4fd6-b555-8267bfd6849e.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 飞虎严选 洁丽雅长绒棉纯棉毛巾 两条装 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;19.90</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# " target="_blank "><img  src="picture/a0a59c25-28a7-47a2-93c8-fbc837c94273.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 【浪莎家纺】可拆卸 蕾丝床裙冰丝席公主风凉席 花梦缘粉 1.8米 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;149</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot_logo foot_logo3 ">
+                        <ul>
+                            <li><a href="# " title=" "><img src="picture/3f_logos_01.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/3f_logos_02.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/3f_logos_03.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/3f_logos_04.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/3f_logos_05.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/3f_logos_06.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/3f_logos_07.jpg " border="0 " /></a></li>
+                            <li><a href="$ " title=" "><img src="picture/3f_logos_08.jpg " border="0 " /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="W1200 ">
+                    <div class="title_04 miaodian "><a name="d5 "></a>
+                        <div class="tags ">
+                            <a class="tags_item ">早教益智</a>
+                            <a class="tags_item ">婴幼玩具</a>
+                            <a class="tags_item ">儿童自行车</a>
+                            <a class="tags_item ">婴童箱包</a>
+                            <a class="tags_item ">喂养用品</a>
+                            <a class="tags_item ">更多商品〉</a>
+                        </div>
+                    </div>
+                    <div class="pro_item pro_item_01 clearfix ">
+                        <div class="pro_01 ">
+                            <div class="oment_cover "><a class="oment_cover_logo " href="# " target="_blank "><img src="picture/4f_m200_cover.jpg " border="0 " /></a></div>
+                            <div class="oment_cover-bi2 "><a class="oment_cover_logo1 " href="# " target="_blank "><img src="picture/4f_m400-cover-1.jpg " border="0 " /></a>
+                                <a class="oment_cover_logo1 " href="# " target="_blank "><img src="picture/4f_m400-cover-2.jpg " border="0 " /></a></div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# " target="_blank "><img  src="picture/f6f5e414-f947-41b1-b71b-4d27893ad6c0.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 山猫吉咪   七星瓢虫16寸葫芦拉杆箱   SMJM-16WM3928 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;148</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# "><img  src="picture/e02dcf1e-e47d-4c99-a11d-41accd79ea35.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 贝贝鸭  小熊益智点读笔 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;78</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# "><img  src="picture/d2e03967-885c-442f-8340-dc510116c9c0.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 海尔Haier 婴儿双瓶智能恒温暖奶器多功能热奶器HBW-PB01 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;119</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# "><img  src="picture/3b407183-e620-442b-939e-2e2c1dda28c7.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 漂漂羽毛 纸尿裤 010401 S码  68片 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;99</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# "><img  src="picture/700def91-44ed-41a4-8a38-27d943b8f239.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 麦迪熊 早教投影学习机 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;888</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pro_blank clearfix ">
+                            <div class="ui_pro clearfix ">
+                                <div class="ui_pimg "><a href="# "><img  src="picture/b60303c4-8ef2-408d-9c38-f646b0773dea.jpg " width="150 " height="150 "></a></div>
+                                <div class="ui_pattribute ">
+                                    <p class="ui_pname "><a href="# "> 贝立安Brillante宝宝宽口径PPSU奶瓶新生儿防摔防胀气160ml BYP29 </a></p>
+                                </div>
+                                <a href="# " target="_blank ">
+                                    <div class="old_pprice ">
+                                        <div class="ui_pprice ">
+                                            <span class="ui_pprice_e ">&yen;109</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot_logo foot_logo4 ">
+                        <ul>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/4f_logos_01.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/4f_logos_02.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/4f_logos_03.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/4f_logos_04.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/4f_logos_05.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/4f_logos_06.jpg " border="0 " /></a></li>
+                            <li><a href="# " target="_blank " title=" "><img src="picture/4f_logos_07.jpg " border="0 " /></a></li>
+                            <li><a href="# " title=" "><img src="picture/4f_logos_08.jpg " border="0 " /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- banner -->
+            <div class="sl_footer ">
+                <div class="sl_footer_bd ">
+                    <div class="kouhao ">质量放心 全场正品100%、购物安心 货到付款 快速送达、服务贴心 7天退货 15天换货</div>
+                    <div class="clearfix ">
+                        <div class="service ">
+                            <p class="service_tel ">订购/咨询热线：<strong>400-883-6900</strong></p>
+                            <p class="service_tel ">投诉/建议热线：<strong>400-883-9315</strong></p>
+                            <div class="service_time ">
+                                <p class="time ">周一至周六：<em>08:00-21:00</em></p>
+                                <p class="time ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周日：<em>09:00-18:00</em></p>
+                                <p class="icon "></p>
+                            </div>
+                        </div>
+                        <div class="service_guide " tag="Homepage|页脚_帮助|click ">
+                            <dl class="shopguide ">
+                                <dt>购物指南</dt>
+                                <dd><a href="# ">购物流程</a></dd>
+                                <dd><a href="# ">会员说明</a></dd>
+                                <dd><a href="# ">积分说明</a></dd>
+                                <dd><a href="# ">优惠券</a></dd>
+                                <dd><a href="# ">第三方服务说明</a></dd>
+                                <dd><a href="# ">团购规则</a></dd>
+                            </dl>
+                            <dl class="pay ">
+                                <dt>支付方式</dt>
+                                <dd><a href="# ">在线支付</a></dd>
+                                <dd><a href="# ">体验点付款</a></dd>
+                                <dd><a href="# ">货到付款</a></dd>
+                                <dd><a href="# ">银行转账</a></dd>
+                                <dd><a href="# ">邮局汇款</a></dd>
+                                <dd><a href="# ">分期付款</a></dd>
+                            </dl>
+                            <dl class="delivery ">
+                                <dt> 配送方式</dt>
+                                <dd><a href="# ">配送服务说明</a></dd>
+                                <dd><a href="# ">验货签收与拒收</a></dd>
+                                <dd><a href="# ">包装说明</a></dd>
+                                <dd><a href="# ">24小时送达</a></dd>
+                                <dd><a href="# ">免运费说明</a></dd>
+                            </dl>
+                            <dl class="customer ">
+                                <dt>售后服务</dt>
+                                <dd><a href="# ">飞虎自营售后政策</a></dd>
+                                <dd><a href="# ">第三方卖家售后政策</a></dd>
+                                <dd><a href="# ">退换货流程</a></dd>
+                                <dd><a href="# ">退款说明</a></dd>
+                                <dd><a href="# ">发票说明</a></dd>
+                                <dd><a href="# ">客服邮箱</a></dd>
+                            </dl>
+                            <dl class="valueAdd ">
+                                <dt>特色服务</dt>
+                                <dd><a href="# ">产品知识</a></dd>
+                                <dd><a href="# ">简易故障排除</a></dd>
+                                <dd><a href="# ">软件下载</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="copyright_con ">
+                        <ul class="link clearfix ">
+                            <li><a href="# " title="常见问题 "> 常见问题</a></li>
+                            <li><a href="# " title="法律说明 ">法律说明</a></li>
+                            <li><a href="# " title="联系我们 ">联系客服</a></li>
+                            <li><a href="# ">新闻中心</a></li>
+                            <li class="last "><a href="# ">意见箱</a></li>
+                        </ul>
+                        <div class="copyright ">
+                            <p>增值电信业务经营许可证：<a href="# " target="_blank ">粤B2-20130551</a> | 网站备案：<a href="# " target="_blank ">粤ICP备14036938号</a> </p>
+                            <p>食品流通许可证：SP4403112014007826 | 食品流通许可证：SP1103021110002595 </p>
+                            <p> Copyright &copy; 2009-2018 深圳市理约云信息管理有限公司.All Rights Reserved &nbsp;<span style="color:#FFF ">WWW04-OUTER</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
+<script type="text/javascript " src="js/jquery-1.7.2.min.js "></script>
+<script type="text/javascript " src="js/jquery.flexslider-min.js "></script>
+<script type="text/javascript ">
+$(document).ready(function() {
+
+    $('.bd').flexslider({
+
+        directionNav: true,
+
+        pauseOnAction: false
+
+    });
+
+});
+</script>
+<script language=JavaScript>
+    var now = new Date(); //当前时间
+    var index = 0;
+
+    function GetServerTime() {
+
+        var d = now.getYear() + "/ " + now.getMonth() + "/ " + now.getDate() + " 10:00:00 "; //设置每天的16.:30 为节点
+        var date = new Date(d);
+        now.setTime(now.getTime() + 250);
+        days = (date - now) / 1000 / 60 / 60 / 24;
+        daysRound = Math.floor(days);
+        hours = (date - now) / 1000 / 60 / 60 - (24 * daysRound);
+        hoursRound = Math.floor(hours);
+        minutes = (date - now) / 1000 / 60 - (24 * 60 * daysRound) - (60 * hoursRound);
+        minutesRound = Math.floor(minutes);
+            seconds = (date - now) / 1000 - (24 * 60 * 60 * daysRound) - (60 * 60 * hoursRound) - (60 * minutesRound);
+            secondsRound = Math.round(seconds);
+            if ((hoursRound == 0 && minutesRound == 0 && secondsRound == 0)) { 
+            //都等于0 说明过了16:30
+                index = 1;
+                }
+                if (hoursRound < 10)
+
+                hoursRound = "0 " + hoursRound;
+                if (minutesRound < 10)
+
+                    minutesRound = "0 " + minutesRound;
+                if (secondsRound < 10)
+
+                    secondsRound = "0 " + secondsRound;
+                    //判断今天还是明天
+                if (index == 0 && (parseFloat(now.toTimeString().substr(0, 2) + now.toTimeString().substr(3, 3).substr(0, 2) + now.toTimeString().substr(6, 7)) <= 162959)) {
+                    document.getElementById("time ").innerHTML = hoursRound + "： " + minutesRound + "： " + secondsRound;
+                    } else {
+                        document.getElementById("time ").innerHTML = hoursRound + "： " + minutesRound + "： " + secondsRound;
+                    }
+                }
+        setInterval("GetServerTime() ", 250);
+</script>
