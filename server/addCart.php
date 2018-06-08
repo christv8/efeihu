@@ -1,31 +1,18 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2018/5/31
- * Time: 19:08
+
  */
 include "config.php";
 
 session_start();
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    // {    pid: "1555771170",
-    //     title: "武极 i7 8700/华硕GTX1060-5G/320G 游戏台式吃鸡电脑主机/DIY组装机",
-    //     price: "5299.00",
-    //     uid:2,
-    //     img: "http://img10.360bu18e7fda7.jpg",
-    //      num: "1"}
+        // "pid": "1604524",
+        // "title": "比得兔多功能削皮器套装PR-2496 绿色 5秒快速削皮 迷你型削水果机",
+        // "dis": "比得兔多功能削皮器套装",
+        // "price": "45",
 
-
-    if(!empty($_REQUEST["pid"])!empty(!empty($_REQUEST["title"])))
-
-
-
-
-
-
-
+        // "img": "picture/793f273b-ccad-43c1-8100-70d3c876fa66.jpg",
 
     if(!empty($_REQUEST["pid"]) && !empty($_REQUEST["title"]) && !empty($_REQUEST["price"]) && !empty($_REQUEST["uid"]) && !empty($_REQUEST["img"]) && !empty($_REQUEST["num"])){
 
@@ -37,8 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $num = $_REQUEST["num"];
        $total = $price * $num;
 
-        //1.读取数据库 的数据 根据 用户id,产品的id,作为查询条件,查看是否存在
-
+        //1.读取数据库 
         $extisSQL = "SELECT * FROM carts WHERE u_id=? AND p_id=?";
         $stmt = $conn->prepare($extisSQL);
         $stmt->bind_param("is", $uid, $pid);
@@ -46,8 +32,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $resultQuery = $stmt->get_result();
         if($resultQuery->num_rows>=1){
             //2. 存在
-            // 数量与金额进行修改
-            //修改,要根据 当前的购买人与产品id,进行修改 数量与总金额
+
             $updateSQL="UPDATE carts SET c_num=c_num +? ,c_total=c_num * c_price WHERE u_id=? AND p_id=?";
 
             $stmt = $conn->prepare($updateSQL);
@@ -61,9 +46,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
         }else{
-            //3.不存在, 插入 用户id,产品id,产品名称,产品价格,产品数量,产品图片
+            //3.不存在, 插入 
 
-            $insertSQL="INSERT INTO carts(`c_name`,`c_price`,`c_img`,`u_id`,`p_id`,`c_total`,`c_num` )VALUES(?,?,?,?,?,?,?)";
+            $insertSQL="INSERT INTO carts(`c_id`,`c_title`,`c_price`,`u_img`,`p_id`,`c_total`,`c_num` ) VALUES(?,?,?,?,?,?,?)";
             $stmt = $conn->prepare($insertSQL);
             $stmt->bind_param("sisisis",$title,$price,$img,$uid,$pid,$total,$num);
             $stmt->execute();

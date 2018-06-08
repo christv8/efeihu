@@ -2,27 +2,19 @@
 
 //     require(["jquery", "jquery.cookie"], function() {
 
+//         var currentUser = JSON.parse(sessionStorage.getItem("userinfo") || "{}");
+//         console.log(currentUser);
+
+//         $("#ulogin").html("欢迎<a>" + currentUser.uname + "</a><a href='javascript:;' class='exit'>退出登录</a>")
+
+//         $(".exit").on("click", function() {
+//             sessionStorage.removeItem("userinfo");
+//             $("#ulogin").html("<a href='login.html'>安全登录</a>")
+//         })
 
 
 
 //     })
+
+
 // })
-// 
-(function() {
-
-
-
-
-
-
-
-    $(".vi_choose .vi_choose_amount .ui_quantity span").on("click", function() {
-        if ($(this).text() == "+") {
-            $(this).prev().val($(this).prev().val() - 0 + 1)
-        } else {
-            if ($(this).next().val() != 1) {
-                $(this).next().val($(this).next().val() - 1)
-            }
-        }
-    })
-})();

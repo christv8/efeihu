@@ -1,0 +1,421 @@
+.sl_sitenav {
+    height: 29px;
+    background: url(../images/sl_sitenav_bg.png) repeat-x 0 0;
+    position: relative;
+    z-index: 990;
+    min-width: 1200px;
+    border-bottom: solid 1px #ccc;
+    zoom: 1
+}
+
+.sl_sitenav_bd {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    clear: both;
+    position: relative
+}
+
+.sl_sitenav .loginReg {
+    padding-top: 2px;
+    line-height: 25px;
+    float: left;
+    width: 400px;
+}
+
+.sl_sitenav .loginReg .login a,
+.sl_sitenav .loginReg .reg a {
+    padding: 0 4px;
+    color: #0066ff;
+}
+
+.sl_sitenav .loginReg .login a:hover,
+.sl_sitenav .loginReg .reg a:hover {
+    color: #AE0001;
+}
+
+.sl_sitenav .loginReg .login .curr {
+    background: #C8012C;
+    color: #FFF
+}
+
+.sl_sitenav .loginReg .login .curr:hover {
+    color: #FFF;
+    text-decoration: none
+}
+
+.sl_sitenav .loginReg .logined a {
+    color: #0066ff;
+}
+
+.sl_sitenav .loginReg .logined a:hover {
+    color: #C7012C;
+}
+
+.sl_sitenav .quickmenu {
+    float: right;
+    padding-top: 2px;
+    line-height: 25px;
+    *width: 484px;
+}
+
+.sl_sitenav .myacount {
+    float: left;
+    width: 82px;
+    margin-right: 8px
+}
+
+.sl_sitenav .myacount .menu {
+    position: relative;
+    height: 25px;
+    zoom: 1;
+    padding: 0 0 0 10px;
+    width: 70px;
+    z-index: 992;
+}
+
+.sl_sitenav .myacount .menu_hd b {
+    position: absolute;
+    right: 6px;
+    top: 10px;
+    display: block;
+    width: 10px;
+    height: 5px;
+    overflow: hidden;
+    background: url(../images/sl_sitenav.png) no-repeat 0 0px;
+    cursor: pointer;
+}
+
+.sl_sitenav .myacount .menu_hd span {
+    position: absolute;
+    right: -2px;
+    top: 8px;
+    display: block;
+    width: 2px;
+    height: 10px;
+    overflow: hidden;
+    background: url(../images/sl_sitenav.png) no-repeat -10px 0;
+}
+
+.sl_sitenav .myacount .menu_bd {
+    display: none;
+    border: 1px solid #CCC;
+    background: #FFF;
+    border-top-width: 0;
+    width: 58px;
+    padding: 0 10px;
+    position: absolute;
+    top: 26px;
+    left: -1px;
+    zoom: 1
+}
+
+.quickmenu .menu:hover .menu_bd {
+    display: block;
+}
+
+.sl_sitenav .myacount .menu_bd a:hover {
+    color: #B40000;
+    display: block;
+}
+
+.sl_sitenav .myacount .menu_bd_curr {
+    display: block;
+    border: 1px solid #CCC;
+    border-bottom-width: 0;
+    background: #FFF;
+    padding-left: 9px;
+    margin-top: -3px;
+    padding-top: 2px
+}
+
+.sl_sitenav .myacount .menu_bd_curr b {
+    top: 12px;
+    _right: 5px
+}
+
+.sl_sitenav .myacount .menu_bd_curr .menu_bd_curr {
+    top: 26px;
+    border-bottom-width: 1px;
+    border-top-width: 0;
+    padding-left: 11px
+}
+
+.sl_sitenav .myacount .menu_bd_curr .menu_hd span {
+    background: none;
+}
+
+.sl_sitenav .mobile {
+    float: left;
+    width: 68px;
+    padding-left: 18px;
+    position: relative;
+}
+
+.sl_sitenav .mobile b {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    display: block;
+    width: 2px;
+    height: 10px;
+    overflow: hidden;
+    background: url(../images/sl_sitenav1.png) no-repeat -10px 0;
+}
+
+.sl_sitenav .mobile .icon {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    display: block;
+    width: 10px;
+    height: 14px;
+    overflow: hidden;
+    background: url(../images/sl_sitenav1.png) no-repeat -40px 0;
+    cursor: pointer;
+    *top: 5px;
+}
+
+.sl_sitenav .help {
+    float: left;
+    width: 68px;
+    position: relative;
+}
+
+.sl_sitenav .help b {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    display: block;
+    width: 2px;
+    height: 10px;
+    overflow: hidden;
+    background: url(../images/sl_sitenav.png) no-repeat -10px 0;
+}
+
+.sl_sitenav .collection {
+    float: left;
+    width: 66px;
+    position: relative;
+}
+
+.sl_sitenav .collection b {
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    display: block;
+    width: 2px;
+    height: 10px;
+    overflow: hidden;
+    background: url(../images/sl_sitenav.png) no-repeat -10px 0;
+}
+
+.sl_sitenav .enterprise {
+    float: left;
+    width: 66px;
+    position: relative;
+}
+
+.sl_sitenav .enterprise b {
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    display: block;
+    width: 2px;
+    height: 10px;
+    overflow: hidden;
+    background: url(../images/sl_sitenav_1.png) no-repeat -10px 0;
+}
+
+.sl_sitenav .tel {
+    float: right;
+    *width: 88px;
+    text-align: right;
+    position: relative;
+    padding-left: 15px;
+    font-weight: bold;
+    font-family: simsun;
+    line-height: 26px;
+}
+
+.sl_sitenav .tel b {
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    background: url(../images/sl_sitenav_2.png) no-repeat -20px 0;
+}
+
+
+.sl_footer {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    clear: both;
+    padding-bottom: 20px;
+}
+
+.sl_footer .kouhao {
+    height: 47px;
+    overflow: hidden;
+    line-height: 400px;
+    margin-bottom: 20px;
+    background: url(../images/sl_footer.png) no-repeat 0 0;
+}
+
+.sl_footer .service {
+    float: left;
+    width: 250px;
+    padding-top: 20px;
+    color: #999;
+}
+
+.sl_footer .service_tel {
+    padding-left: 35px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.sl_footer .service_tel strong {
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    font-family: arial;
+}
+
+.sl_footer .service_time {
+    position: relative;
+    padding-top: 6px;
+    padding-left: 100px;
+    zoom: 1;
+}
+
+.sl_footer .service_time .icon {
+    position: absolute;
+    left: 40px;
+    top: 8px;
+    width: 52px;
+    height: 50px;
+    background: url(../images/sl_footer.png) no-repeat 0 -47px;
+}
+
+.sl_footer .service_online {
+    line-height: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.sl_footer .service_online em {
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: "Microsoft Yahei";
+}
+
+.sl_footer .service_online a,
+.sl_footer .service_online a:visited {
+    color: #c7120c;
+    text-decoration: underline;
+}
+
+.sl_footer .service_time .time {
+    padding-top: 8px;
+}
+
+.sl_footer .service_time .time em {
+    color: #FF6600;
+}
+
+.sl_footer .service_guide {
+    float: right;
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+.sl_footer .service_guide dl {
+    float: left;
+    width: 164px;
+    height: 150px;
+    border-left: solid 1px #ddd;
+    padding-left: 15px;
+}
+
+.sl_footer .service_guide dt {
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", simhei;
+    color: #000;
+}
+
+.sl_footer .service_guide dd {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.sl_footer .service_guide dd a:link,
+.sl_footer .service_guide dd a:visited {
+    color: #999;
+}
+
+.sl_footer .service_guide dd a:hover {
+    color: #0066ff;
+}
+
+.sl_footer .service_guide dd .new {
+    background: url(../images/new.gif) no-repeat;
+    padding-top: 3px;
+    margin-left: 5px
+}
+
+.sl_footer .copyright_con {
+    position: relative;
+    zoom: 1
+}
+
+.sl_footer .link {
+    overflow: hidden;
+}
+
+.sl_footer .link li {
+    float: left;
+    padding: 0 10px;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    background: url(../images/sl_footer.png) no-repeat right -75px;
+}
+
+.sl_footer .link .last {
+    background: none;
+}
+
+.sl_footer .copyright {
+    color: #999;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.sl_footer .copyright a,
+.sl_footer .copyright a:visited {
+    color: #999;
+}
+
+.sl_footer .copyright a:hover {
+    color: #0066ff;
+}
+
+.sl_footer .zhengshu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+}
+
+.sl_footer .zhengshu .img {
+    margin-left: 10px;
+}

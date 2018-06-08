@@ -9,7 +9,7 @@ require(["config"], function() {
                 submitHandler: function() {
                     if ($.idcode.validateCode()) {
                         $.ajax({
-                            url: "http://127.0.0.1/efeihu/server/register.php",
+                            url: "../../server/register.php",
                             type: "post",
                             data: {
                                 uname: $("[name='uname']").val(),
@@ -39,7 +39,7 @@ require(["config"], function() {
                         'rangelength': [6, 18],
                         remote: {
                             type: "get",
-                            url: "http://127.0.0.1/efeihu/server/IsExistUser.php",
+                            url: "../../server/IsExistUser.php",
                         }
                     },
                     upwd: {

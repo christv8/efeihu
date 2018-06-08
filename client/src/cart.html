@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>文档标题</title>
+    <meta name="keywords" content="your keywords">
+    <meta name="description" content="your description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link type="text/css" rel="stylesheet" href="css/global_v21.css" />
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <!--     <script type="text/javascript" src="js/lib/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script> -->
+    <script src="js/lib/require.js" data-main="js/cart"></script>
+    <style type="text/css">
+    table {
+        width: 1200px;
+        margin: 10px auto;
+        border: 1px solid #E3DDDD;
+    }
+
+    table,
+    tr,
+    td,
+    th {
+        border-top: solid 2px #c7012c;
+    }
+
+    tbody img {
+        width: 50px;
+        height: 50px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="sl_sitenav">
+        <div class="sl_sitenav_bd clearfix">
+            <div class="loginReg" id="loginReg">
+                <span class="login">
+                您好，欢迎来到飞虎乐购！<a href="login.html">安全登录</a></span> <span class="reg">还没加入我们？<a
+                        href="register.html">免费注册</a></span>
+            </div>
+            <div class="loginReg" id="loginReg_logined" style="display: none">
+                <span class="logined">亲爱的 <a id="loginReg_logined_name" href="#">
+                </a>
+                上午好！ <a href="#">[退出]</a></span>
+            </div>
+            <div class="quickmenu">
+                <div class="myacount" id="Jmyacount">
+                    <div class="menu">
+                        <a href="#" class="menu_hd">
+                        我的账户<b></b><span></span></a>
+                        <ul class="menu_bd">
+                            <li><a href="#">账户首页</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="help" id="Jhelp">
+                    <div class="menu">
+                        <a href="#" class="menu_hd">网站导航<b></b><span></span></a>
+                        <ul class="menu_bd ">
+                            <li><a href="#">帮助中心</a></li>
+                            <li><a href="#">联系客服</a></li>
+                            <li><a href="#">常见问题</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collection">
+                    <a href="javascript:;" id="JaddFavorites">加入收藏</a><b></b></div>
+                <div class="tel">
+                    400 883 6900<b></b></div>
+            </div>
+        </div>
+    </div>
+    <div class="sl_header " id="Jheader ">
+        <h1 class="logo ">
+        <a href="# " target="_self " title="飞虎乐购 " >
+            飞虎乐购</a></h1>
+        <div class="tsearch clearfix ">
+            <div class="tsearch_con ">
+                <input type="text " class="tsearch_txt JtxtFB " id="Jsearch " value=" " />
+            </div>
+            <div class="tsearch_btncon ">
+                <a href="javascript:void(0); " id="Jsearch_submit " class="tsearch_btn ">搜 索</a>
+            </div>
+        </div>
+    </div>
+    <a id="JvhdQD" style="display:none" attr="" class="vhd_qiandao" href="javascript:;"> </a>
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th>
+                    <label>
+                        <input type="checkbox" name="" checked="checked">全选
+                    </label>
+                </th>
+                <th>商品</th>
+                <th>商品数量</th>
+                <th>商品单价</th>
+                <th>总价</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="tab">
+        </tbody>
+    </table>
+    <div class="sl_footer">
+        <div class="sl_footer_bd">
+            <div class="kouhao">质量放心 全场正品100%、购物安心 货到付款 快速送达、服务贴心 7天退货 15天换货</div>
+            <div class="clearfix">
+                <div class="service">
+                    <p class="service_tel">订购/咨询热线：<strong>400-883-6900</strong></p>
+                    <p class="service_tel">投诉/建议热线：<strong>400-883-9315</strong></p>
+                    <div class="service_time">
+                        <p class="time">周一至周六：<em>08:00-21:00</em></p>
+                        <p class="time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周日：<em>09:00-18:00</em></p>
+                        <p class="icon"></p>
+                    </div>
+                </div>
+                <div class="service_guide">
+                    <dl class="shopguide">
+                        <dt>购物指南</dt>
+                        <dd><a href="#">购物流程</a></dd>
+                        <dd><a href="#">会员说明</a></dd>
+                        <dd><a href="#">积分说明</a></dd>
+                        <dd><a href="#">优惠券</a></dd>
+                        <dd><a href="#">第三方服务说明</a></dd>
+                        <dd><a href="#">团购规则</a></dd>
+                    </dl>
+                    <dl class="pay">
+                        <dt>支付方式</dt>
+                        <dd><a href="#">在线支付</a></dd>
+                        <dd><a href="#">体验点付款</a></dd>
+                        <dd><a href="#">货到付款</a></dd>
+                        <dd><a href="#">银行转账</a></dd>
+                        <dd>
+                            <a href="#>邮局汇款</a></dd>
+                        <dd><a href=" # ">分期付款</a></dd>
+                    </dl>
+                    <dl class="delivery ">
+                        <dt> 配送方式</dt>
+                        <dd><a href="# ">配送服务说明</a></dd>
+                        <dd><a href="# ">验货签收与拒收</a></dd>
+                        <dd><a href="# ">包装说明</a></dd>
+                        <dd><a href="# ">24小时送达</a></dd>
+                        <dd><a href="# ">免运费说明</a></dd>
+                    </dl>
+                    <dl class="customer ">
+                        <dt>售后服务</dt>
+                        <dd><a href="# ">飞虎自营售后政策</a></dd>
+                        <dd><a href="# ">第三方卖家售后政策</a></dd>
+                        <dd><a href="# ">退换货流程</a></dd>
+                        <dd><a href="# ">退款说明</a></dd>
+                        <dd><a href="# ">发票说明</a></dd>
+                        <dd><a href="# ">客服邮箱</a></dd>
+                    </dl>
+                    <dl class="valueAdd ">
+                        <dt>特色服务</dt>
+                        <dd><a href="# ">产品知识</a></dd>
+                        <dd><a href="# ">简易故障排除</a></dd>
+                        <dd><a href="# ">软件下载</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="copyright_con ">
+                <ul class="link clearfix ">
+                    <li><a href="# "> 常见问题</a></li>
+                    <li><a href="# ">法律说明</a></li>
+                    <li><a href="# ">联系客服</a></li>
+                    <li><a href="# ">新闻中心</a></li>
+                    <li class="last "><a href="# ">意见箱</a></li>
+                </ul>
+                <div class="copyright ">
+                    <p>增值电信业务经营许可证：<a href="# " target="_blank ">粤B2-20130551</a> | 网站备案：<a href="# " target="_blank ">粤ICP备14036938号</a> </p>
+                    <p>食品流通许可证：SP4403112014007826 | 食品流通许可证：SP1103021110002595 </p>
+                    <p> Copyright &copy; 2009-2018 深圳市理约云信息管理有限公司.All Rights Reserved &nbsp;<span style="color:#FFF ">WWW04-OUTER</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

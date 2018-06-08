@@ -15,6 +15,7 @@
 }
 
 
+
 /* ------------------------
 gong gao 
 --------------------  */
@@ -140,6 +141,7 @@ gong gao
 }
 
 
+
 /* ---------------
 .home_groupbuy:gonggai
 ------------------------  */
@@ -168,6 +170,7 @@ gong gao
 .V980 .home_groupbuy .time {
     width: 115px;
 }
+
 
 
 
@@ -226,58 +229,6 @@ gong gao
 }
 
 
-/*example*/
-
-
-/*.example2{ position:relative}*/
-
-.example2 ol {
-    position: relative;
-    width: 125px;
-    height: 10px;
-    top: -15px;
-    left: 72px;
-}
-
-.example2 ol li {
-    float: left;
-    width: 30px;
-    height: 3px;
-    margin: 5px;
-    background: #fff;
-}
-
-.example2 ol li.seleted {
-    background: #1AA4CA;
-}
-
-
-
-.luara-left {
-    position: relative;
-    padding: 0;
-    overflow: hidden;
-}
-
-.luara-left ul {
-    position: relative;
-    padding: inherit;
-    margin: 0;
-}
-
-.luara-left ul li {
-    float: left;
-    padding: inherit;
-    margin: inherit;
-    list-style: none;
-}
-
-.luara-left ul li img {
-    width: inherit;
-    height: inherit;
-}
-
-
 .clock {
     position: absolute;
     left: 12%;
@@ -288,9 +239,7 @@ gong gao
     color: #000;
 }
 
-.example2 ol li.seleted {
-    background: #1AA4CA;
-}
+
 
 .foot_logo {
     position: relative;

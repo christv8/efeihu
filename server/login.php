@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2018/5/31
- * Time: 11:07
- */
+
 
 include "config.php";
 
